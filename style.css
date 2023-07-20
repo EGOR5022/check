@@ -101,7 +101,6 @@ border: 100px;
 li{
   list-style: none;
   display: inline-block;
-
 }
 li a{
   color: #000000;
@@ -212,7 +211,9 @@ transform: scale(1.1);
 .hidepic{
   display: none;
 }
-
+.hide{
+  display: none;
+}
 @media (max-width: 375px) {
   .alert2{
     width: 355px;
@@ -225,7 +226,11 @@ transform: scale(1.1);
     font-size: 60px;
   }
   .bio{
+    position: absolute;
     width: 350px;
+    height: 400px;
+    top: 150px;
+    left: 10px;
   }
   .text{
   width: 320px;
@@ -255,5 +260,37 @@ transform: scale(1.1);
     border-radius: 30px;
     z-index: 1000;
     left: -1px;
+  }
+  li{
+    list-style: none;
+    display: inline;
+  }
+  li a{
+    font-size: 10px;
+  }
+  .img{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+  .hide{
+    position: relative;
+    display: inline;
+    top: 180px;
+    background: linear-gradient(135deg, #a07b8c78, #5a5353c1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 1000px;
+    font-weight: bold;
+  }
+  .pic{
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    left: 15px;
   }
 }
